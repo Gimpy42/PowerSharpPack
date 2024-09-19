@@ -4,7 +4,8 @@ function Invoke-Snaffler
     [CmdletBinding()]
     Param (
         [String]
-        $Command = "-u -s -y -o .\snaffler.tsv"
+        #$Command = "-u -s -y -o .\snaffler.tsv"
+        $Command = "-s"
 
     )
     
