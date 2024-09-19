@@ -18,7 +18,7 @@ function Invoke-Get-RBCD-Threaded
     $StringWriter = New-Object IO.StringWriter
     [Console]::SetOut($StringWriter)
 
-    [Get_RBCD.Program]::Main($Command.Split(" "))
+    [Get_RBCD.Program]::main($Command.Split(" "))
 
     [Console]::SetOut($OldConsoleOut)
     $Results = $StringWriter.ToString()
